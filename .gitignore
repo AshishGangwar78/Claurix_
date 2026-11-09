@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+backend/.venv/
+model/.venv/
+
+# Model runtime artifacts (generated on API run)
+model/backend/storage/
+
+# Build / cache
+.next/
+out/
+dist/
+*.tsbuildinfo
+
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+backend/.env
+!.env.example
+!backend/.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Runtime data
+backend/uploads/
+backend/data/
+backend/exports/
+*.db
+backend/test.db
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Docker (local overrides only)
+docker-compose.override.yml
